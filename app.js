@@ -31,6 +31,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/about', aboutRouter);
 app.use('/contact', contactRouter);
+app.use('/index', indexRouter);
 app.use('/', indexRouter);
 app.use('/meals', mealsRouter);
 app.use('/news', newsRouter);

@@ -5,4 +5,4 @@ const rooms = (req, res) => {
 
 module.exports = {
     rooms
-}
+};
