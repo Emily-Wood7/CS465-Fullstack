@@ -13,6 +13,7 @@ export class AddTripComponent implements OnInit {
 
   addForm: FormGroup;
   submitted = false;
+  perPersonPattern = "^[0-9]*\.[0-9]{2}$";
 
   constructor(
     private formBuilder: FormBuilder,
@@ -28,7 +29,7 @@ export class AddTripComponent implements OnInit {
       length: ['', Validators.required],
       start: ['', Validators.required],
       resort: ['', Validators.required],
-      perPerson: ['', Validators.required],
+      perPerson: ['', [Validators.required, Validators.pattern(this.perPersonPattern)]],
       image: ['', Validators.required],
       description: ['', Validators.required],
     })

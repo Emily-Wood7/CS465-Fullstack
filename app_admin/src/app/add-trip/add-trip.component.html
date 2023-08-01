@@ -59,11 +59,14 @@
 
     <div class="form-group">
       <label>Price per Person ($):</label>
-      <input type="text" formControlName="perPerson" placeholder="PerPerson" class="form-control"
+      <input type="text" formControlName="perPerson" placeholder="0.00" class="form-control"
         [ngClass]="{ 'is-invalid': submitted && f.perPerson.errors }">
       <div *ngIf="submitted && f.perPerson.errors">
         <div *ngIf="f.perPerson.errors.required">
           Price per Person is required
+        </div>
+        <div *ngIf="f.perPerson.errors?.pattern">
+          Price per Person is Invalid
         </div>
       </div>
     </div>
