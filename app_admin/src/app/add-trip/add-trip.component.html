@@ -1,5 +1,5 @@
-<div class="col-md-3">
-  <h2 class="text-center">Add Trip</h2>
+<div class="col-md-5">
+  <h2 class="text-left">Add Trip</h2>
   <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
 
     <div class="form-group">
@@ -82,10 +82,10 @@
       </div>
     </div>
 
-    <div class="form-group">
+    <div class="form-group" >
       <label>Description:</label>
-      <input type="text" formControlName="description" placeholder="Description" class="form-control"
-        [ngClass]="{ 'is-invalid': submitted && f.description.errors }">
+      <textarea formControlName="description" placeholder="Description" class="form-control" rows="5"
+        [ngClass]="{ 'is-invalid': submitted && f.description.errors }"></textarea>
       <div *ngIf="submitted && f.description.errors">
         <div *ngIf="f.description.errors.required">
           Description is required
