@@ -36,6 +36,17 @@ export class TripListingComponent implements OnInit {
       });
   }
 
+  private deleteTrip(): void {
+    console.log('Inside TripListingComponent#deleteTrips');
+    this.message = 'Searching for trips';
+    this.tripDataService
+      .getTrips()
+      .then(foundTrips => {
+        this.message = foundTrips.length > 0 ? '' : 'No trips found';
+        this.trips = foundTrips;
+      });
+  }
+
   ngOnInit() {
     this.getTrips();
   }

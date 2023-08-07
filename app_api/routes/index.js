@@ -14,6 +14,7 @@ router
     .route('/trips/:tripCode')
     .get(tripsController.tripsFindCode)
     .put(tripsController.tripsUpdateTrip)
+    .delete(tripsController.tripsDeleteTrip)
 
 router
     .route('/foods')
