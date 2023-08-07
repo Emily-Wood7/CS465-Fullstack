@@ -16,7 +16,7 @@ mongoose.connection.on('disconnected', () => {
 });
 
 const gracefulShutdown = (msg, callback) => {
-  mongoose.connection.close( () => {
+  mongoose.connection.close(() => {
     console.log(`Mongoose disconnected through ${msg}`);
     callback();
   });
@@ -41,4 +41,6 @@ process.on('SIGTERM', () => {
   });
 });
 
+// bring in the Mongoose schema
 require('./models/travlr');
+require('./models/user');

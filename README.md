@@ -54,5 +54,5 @@ You are a software developer working for a software development company. Your su
 </tr>
 </table>
 <br>
-<p align="center"><b>Back End</b></p>
+<p align="center"><b>Admin Single Page Application (SPA)</b></p>
 
