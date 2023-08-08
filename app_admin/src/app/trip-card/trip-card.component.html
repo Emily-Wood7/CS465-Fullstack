@@ -11,7 +11,7 @@
       currency:'USD':'symbol' }} per person</p>
     <p class="card-text" [innerHTML]="trip.description"></p>
 
-    <div>
+    <div *ngIf="isLoggedIn()">
       <button (click)="editTrip(trip)" class="btn btn-info mr-2">Edit</button>
       <button (click)="deleteTrip(trip)" class="btn btn-danger">Delete</button>
     </div>
