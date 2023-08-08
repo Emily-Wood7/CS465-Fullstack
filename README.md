@@ -56,3 +56,67 @@ You are a software developer working for a software development company. Your su
 <br>
 <p align="center"><b>Admin Single Page Application (SPA)</b></p>
 
+<table>
+<tr>
+<th>Landing Page</th>
+<th>Trip Page Without Authentication</th>
+</tr>
+<tr>
+<th><img src="images\Landing Page.png"></th>
+<th><img src="images\TripsNoAuth.png"></th>
+</tr>
+<tr>
+<th>Login Page</th>
+<th>Trip Page With Authentication</th>
+</tr>
+<tr>
+<th><img src="images\Login Page.png"></th>
+<th><img src="images\TripsWithAuth.png"></th>
+</tr>
+<tr>
+<th>Add Trip Page</th>
+<th>Edit Trip Page</th>
+</tr>
+<tr>
+<th><img src="images\AddTrip.png"></th>
+<th><img src="images\EditTrip.png"></th>
+</tr>
+</table>
+
+<h2 align="center">Project Reflection</h2>
+<b>Architecture</b>
+<ul>
+<li>
+<i>Compare and contrast the types of frontend development you used in your full stack project, including Express HTML, JavaScript, and the single-page application (SPA).</i>
+<br>
+
+</li>
+<li>
+<i>Why did the backend use a NoSQL MongoDB database?</i>
+<br>
+
+</li>
+</ul>
+
+<b>Functionality</b>
+<ul>
+<li>
+<i>How is JSON different from Javascript and how does JSON tie together the frontend and backend development pieces?</i>
+<br>
+
+</li>
+<li>
+<i>Provide instances in the full stack process when you refactored code to improve functionality and efficiencies, and name the benefits that come from reusable user interface (UI) components.</i>
+<br>
+
+</li>
+</ul>
+
+<b>Testing</b>
+<ul>
+<li>
+<i>Methods for request and retrieval necessitate various types of API testing of endpoints, in addition to the difficulties of testing with added layers of security. Explain your understanding of methods, endpoints, and security in a full stack application.</i>
+<br>
+
+</li>
+</ul>
