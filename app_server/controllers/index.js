@@ -5,4 +5,12 @@ const index = (req, res) => {
 
 module.exports = {
     index
+<<<<<<< HEAD
 };
+=======
+<<<<<<< HEAD
+};
+=======
+}
+>>>>>>> main
+>>>>>>> main

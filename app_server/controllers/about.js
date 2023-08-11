@@ -5,4 +5,12 @@ const about = (req, res) => {
 
 module.exports = {
     about
+<<<<<<< HEAD
 };
+=======
+<<<<<<< HEAD
+};
+=======
+}
+>>>>>>> main
+>>>>>>> main
