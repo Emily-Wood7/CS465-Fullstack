@@ -34,7 +34,7 @@ You are a software developer working for a software development company. Your su
 </ul>
 
 <b>Usage</b>
-<p align="center"><b>Front-End</b></p>
+<p align="center"><b>Customer Facing Pages</b></p>
 <table>
 <tr>
 <th>Main Page</th>
@@ -89,11 +89,13 @@ You are a software developer working for a software development company. Your su
 <li>
 <i>Compare and contrast the types of frontend development you used in your full stack project, including Express HTML, JavaScript, and the single-page application (SPA).</i>
 <br>
-
+Express.js is a server-side framework for building web applications and APIs, HTML is a markup language for structuring content, JavaScript is a programming language for adding interactivity, and SPAs are a type of web application that uses JavaScript to dynamically update content on a single page. Express.js and SPAs can work together, where Express.js serves as the backend and APIs for an SPA built using JavaScript frameworks.
+<br><br>
 </li>
 <li>
 <i>Why did the backend use a NoSQL MongoDB database?</i>
 <br>
+MongoDB is known for being fast and scaleable.  MongoDB stores documents as binary JSON, which is a Javascript way of holding data, so it works well with the JavaScript used in the MEAN stack. MongoDB also provides drivers and and libraries for many programming languages making it easy to integrate into the backend.
 
 </li>
 </ul>
@@ -103,20 +105,43 @@ You are a software developer working for a software development company. Your su
 <li>
 <i>How is JSON different from Javascript and how does JSON tie together the frontend and backend development pieces?</i>
 <br>
-
+JSON is a data format while JavaScript is a programming language.  JSON facilitates communication between the frontend and backend.  API endoint responses are frequently formatted in JSON to allow the front end to understand and process the data.
+<br><br>
 </li>
 <li>
 <i>Provide instances in the full stack process when you refactored code to improve functionality and efficiencies, and name the benefits that come from reusable user interface (UI) components.</i>
 <br>
-
+We utilized handlebars for our customer facing site, which allowed us to enable headers which were universally used and not hard coded into each site.  Schemas were created to seed the data from the static HTML websites to the MongoDB webstite for reusability and so we did not have to manually enter in all of the data.  Reusable UI compnonents allow for a consistent look and behavior accross the application, easier maintenance, scalability, and allows others to understand the code to better to enrich it themselves.
 </li>
 </ul>
 
 <b>Testing</b>
 <ul>
 <li>
-<i>Methods for request and retrieval necessitate various types of API testing of endpoints, in addition to the difficulties of testing with added layers of security. Explain your understanding of methods, endpoints, and security in a full stack application.</i>
+<i>Methods for request and retrieval necessitate various types of API testing of endpoints, in addition to the difficulties of testing with added layers of security.  Explain your understanding of methods, endpoints, and security in a full stack application.</i>
 <br>
+The different methods we used within this application were:<BR>
+GET - used to retrieve data from the server.<br>
+POST - used to send data to the server.  In this case, our authentication credendials.<br>
+PUT - used to update the data within the server.<br>
+DELETE - used to remove data from the server.<br>
+Endpoints are specific URLs used to represent actions on a server.  In our case, we used trips, and tripCodes.  So the endpoint would look like "/api/trips/{tripCode}".<br>
+We used authentication to ensure only registered users to add/edit/delete trips from the customer facing website.  As I was testing the add method, I noticed that my trips would not load if invalid data was entered.  I included input validation through patterns to ensure I was getting correct data.
 
+</li>
+</ul>
+
+<b>Reflection</b>
+<ul>
+<li>
+<i>How has this course helped you in reaching your professional goals?</i>
+<br>
+This has been my first experience with using a fullstack.  Since I am pursing a computer science degree, the skills learned in this course will help me in my professional career.  I am concentrating in data analysis, so the work I did with MongoDB will help as well.
+</li>
+<br>
+<li>
+<i>What skills have you learned, developed, or mastered in this course to help you become a more marketable candidate in your career field?</i>
+<br>
+I have bettered my skills with identifying what a code is actually doing.  We used a lot of premade code and refactored it.  I would be unable to refactor the code if I didn't understand what it was doing.  Because many of the materials within this course are outdated, it also improved my troubleshooting skills.
 </li>
 </ul>
