@@ -8,5 +8,9 @@ module.exports = {
 <<<<<<< HEAD
 };
 =======
+<<<<<<< HEAD
+};
+=======
 }
+>>>>>>> main
 >>>>>>> main
