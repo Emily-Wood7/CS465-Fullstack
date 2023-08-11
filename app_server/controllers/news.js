@@ -5,4 +5,8 @@ const news = (req, res) => {
 
 module.exports = {
     news
+<<<<<<< HEAD
+};
+=======
 }
+>>>>>>> main
