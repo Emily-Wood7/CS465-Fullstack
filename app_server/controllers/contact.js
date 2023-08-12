@@ -5,12 +5,4 @@ const contact = (req, res) => {
 
 module.exports = {
     contact
-<<<<<<< HEAD
 };
-=======
-<<<<<<< HEAD
-};
-=======
-}
->>>>>>> main
->>>>>>> main

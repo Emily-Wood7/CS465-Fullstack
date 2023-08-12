@@ -5,12 +5,4 @@ const news = (req, res) => {
 
 module.exports = {
     news
-<<<<<<< HEAD
 };
-=======
-<<<<<<< HEAD
-};
-=======
-}
->>>>>>> main
->>>>>>> main
