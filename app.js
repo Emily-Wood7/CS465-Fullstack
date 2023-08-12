@@ -20,6 +20,7 @@ var newsRouter = require('./app_server/routes/news');
 var roomsRouter = require('./app_server/routes/rooms');
 var travelRouter = require('./app_server/routes/travel');
 var usersRouter = require('./app_server/routes/users');
+var travelRouter = require('./app_server/routes/travel');
 
 var apiRouter = require('./app_api/routes/index');
 
@@ -56,6 +57,7 @@ app.use('/news', newsRouter);
 app.use('/rooms', roomsRouter);
 app.use('/travel', travelRouter);
 app.use('/users', usersRouter);
+app.use('/travel', travelRouter);
 
 app.use('/api', apiRouter);
 
